@@ -1,0 +1,18 @@
+.footer{
+    background-color: rgba($error,  0.3);
+    &--logo{
+        &-subscribe{
+         
+        }
+    }
+    &--copyRight{
+     border-top: 1px solid rgba($grey,  0.3);;
+
+    }
+    &--mobile{
+        position: fixed;
+    bottom: -2px;
+    width: 100%;
+    z-index: 9;
+    }
+}
