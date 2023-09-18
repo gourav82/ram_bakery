@@ -4,6 +4,7 @@ import { BsTrashFill, BsStarFill } from "react-icons/bs";
 import UseCheckMobileScreen from '../../hooks/UseCheckMobileScreen';
 import { useDispatch } from 'react-redux';
 import { removieItem, decrease, addToCart} from '../../../redux/slices/cartSlice';
+import { getImageUrl } from '../../../helper/BaseUrl';
 
 const CartProduct = ({data}) => {
   const {isMobile, isIpad } = UseCheckMobileScreen();
@@ -18,9 +19,9 @@ const CartProduct = ({data}) => {
   return (
     <div className="cart--product bg--shadow bg--radius pt--10 pl--10 pr--10 pb--10 flex flex--align-items-center flex--justify-content-between mb--10">
       <div className="cart--product-img flex flex--align-items-center flex--justify-content-center">
-        <Image src={data.images} alt="" width="85" height="100" className='mr--10 bg--radius' />
+        <Image src={getImageUrl(data.image,'product')} alt="" width="85" height="100" className='mr--10 bg--radius' />
         <span className='flex flex--direction-column'>
-          <span>{data.title}</span>
+          <span>{data.name}</span>
           <ul className='flex mb--5 mt--5'>
             <li className='star-active'><BsStarFill /></li>
             <li className='star-active'><BsStarFill /></li>
@@ -28,7 +29,7 @@ const CartProduct = ({data}) => {
             <li className='star-active'><BsStarFill /></li>
             <li className='star-active'><BsStarFill /></li>
           </ul>
-          <span>₹150</span>
+          <span>{data.price}</span>
         </span>
       </div>
       <span className={`flex flex--align-items-center ${isMobile || isIpad? "flex--direction-column":"flex--justify-content-between mt--10"}`}>

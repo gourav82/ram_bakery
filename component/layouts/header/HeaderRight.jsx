@@ -18,15 +18,6 @@ const HeaderRight = ({toggleDrawer}) => {
         {isMobile || isIpad ? "":
           <span className='position--relative flex flex--justify-content-end flex--align-items-start header--menu-hover'>
           <Link href={"/cart"}> <BsCart3 className='fs--25 ml--20'/>
-          <span className='mini-cart'>
-          <h1> hello</h1>
-          <h1> hello</h1>
-            <p>jnensebrhbhrybsyhbgyhsb</p>
-          <h1> hello</h1>
-
-          <h1> hello</h1>
-
-          </span>
           </Link> 
             <span className='fs--12 header--menu-cart position--absolute bg--error flex flex--justify-content-center flex--align-items-center'>{cartList.total}</span>
           </span>

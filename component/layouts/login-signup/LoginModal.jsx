@@ -5,12 +5,14 @@ import {BsX} from "react-icons/bs";
 import SignUpModal from './SignUp';
 import Login from './Login';
 
+
 const LoginModal = ({setLoginModal}) => {
   const [showForm, setShowForm] = useState(false);
 
   const handleShowForm =()=>{
     setShowForm(!showForm);
   }
+  
   return (
 
      <div className="login container--responsive">
@@ -27,7 +29,7 @@ const LoginModal = ({setLoginModal}) => {
             :
              <Login handleShowForm={handleShowForm}/>
               }
-            
+             
      </div>
     )
 }

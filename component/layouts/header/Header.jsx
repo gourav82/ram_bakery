@@ -4,6 +4,7 @@ import HeaderRight from './HeaderRight'
 import TopHeader from './TopHeader'
 import Drawer from 'react-modern-drawer'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Header = () => {
@@ -27,12 +28,14 @@ const Header = () => {
         className=''
       >
        <div className="flex flex--direction-column flex--justify-content-between flex--align-items-center pd--20">
+       <Link href={"/"}>
         <Image src="/assets/image/logo.png" alt="" width="70" height="70"/>
+        </Link>
         <ul className='flex flex--direction-column flex--align-items-center width--column-two-10'>
-            <li className='fs--22 mt--20'>Home</li>
-            <li className='fs--22 mt--20'>Buffet</li>
-            <li className='fs--22 mt--20'>Categury</li>
-            <li className='fs--22 mt--20'>Favourite</li>
+            <li className='fs--22 mt--20'><Link href={"/"}> Home</Link></li>
+            <li className='fs--22 mt--20'><Link href={"/"}>Buffet</Link></li>
+            <li className='fs--22 mt--20'><Link href={"/"}>Categury</Link></li>
+            <li className='fs--22 mt--20'><Link href={"/"}>Favourite</Link></li>
         </ul>
     </div>
       </Drawer>

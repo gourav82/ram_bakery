@@ -83,18 +83,19 @@
 .modal {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -200vh);
+  // transform: translate(-50%, -200vh);
   transition: transform 0.4s ease-in-out;
   overflow: visible;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
 
   @include maxOrientation(1024, 'portrait') {
     padding: 0px;
   }
 
   @media only screen and (max-width: 768px) {
-    width: 90%;
+    width: 95%;
+    margin: 0 auto;
   }
 
   &.active {

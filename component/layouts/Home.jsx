@@ -8,25 +8,33 @@ import MainBanner from './MainBanner'
 import FooterMobile from './footer/FooterMobile'
 import ModalCard from './ModalCard'
 import { useSelector } from 'react-redux'
+import { toast,ToastContainer } from 'react-toastify'
 
 const Home = () => {
-  const [modal, setModal] = useState(false);
-  const [item,setItem] = useState({});
-
-  const handleModal =(item)=>{
-    setModal(!modal);
-    setItem(item);
-}
+  const displayToast = () => {
+    toast.success("Product Added in cart Successfully" );
+  };
   return (
-    <div className={`${modal? "overlay-modal home":""}`}>
+    <>
     <MainBanner/>
-     <PopularItems handleModal={handleModal}/>
+     <PopularItems displayToast={displayToast}/>
     <OfferSlider/>
     <Allcategory/>
-    <LatestItems/>
-    {modal ? <ModalCard handleModal={handleModal} item={item} />:""}
-
-    </div>
+    <LatestItems displayToast={displayToast}/>
+   
+    <ToastContainer
+        position='top-center'
+        autoClose={5000}
+        hideProgressBar={true}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme='light'
+      />
+    </>
   )
 }
 

@@ -65,7 +65,7 @@ if(!formValue.password.trim()){
 setErrros(validError);
 
 if(Object.keys(validError).length === 0){
-  setShowOtpModal(true);
+  setShowOtpModal();
 }
 }
 

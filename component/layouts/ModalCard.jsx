@@ -1,35 +1,43 @@
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsSuitHeart, BsX,BsStar ,BsStarFill} from "react-icons/bs";
 import SmallCart from './SmallCart';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/slices/cartSlice';
+import { getImageUrl } from '../../helper/BaseUrl';
 
 
-const ModalCard = ({handleModal,item}) => {
+const ModalCard = ({handleModal,items,displayToast}) => {
     const review = [0, 1, 2, 3, 4];
 
+
     useEffect(()=>{
-console.log(item);
+console.log(items);
     })
     const dispatch = useDispatch();
+
+    const handleAddToCart =(items)=>{
+       dispatch(addToCart(items));
+       handleModal(false);
+       displayToast();
+    }
   return (
     <>   
     {/* <div className="overlay-modal"></div> */}
-     <div className="modal bg--shadow font--right pl--10 pr--10 pt--5 pb--5">
+     <div className="modal font--right pl--10 pr--10 pt--5 pb--5">
         <BsX onClick={handleModal} className='fs--25 color--error'/>
         <div className="modal--product flex flex--justify-content-between mb--10">
-            <Image src={item?.images} alt="" width="150" height="100" className='bg--radius'/>
-            <div className="modal--product-content">
+            <Image src={getImageUrl(items.image,'product')} alt="" width="150" height="100" className='bg--radius'/>
+            <div className="width--column-60">
                 <span className='flex flex--justify-content-between flex--align-items-center font--left mb--10'>
-                    <span>{item?.title}</span>
+                    <span>{items?.name}</span>
                     <BsSuitHeart/>
                 </span>
                 <span className='flex flex--justify-content-between flex--align-items-center mb--10'>
                 <ul className='flex flex--align-items-center flex--justify-content-center mt--15'>
                     {
                         review.map((pro, index) => {
-                            if (index <= item?.avg_review)
+                            if (index <= items?.avg_review)
                                 return (
                                     <li key={`lin-${index}`} className='star-active'><BsStarFill /></li>
                                 )
@@ -45,8 +53,8 @@ console.log(item);
                 </span>
                 <span className='flex flex--justify-content-between flex--align-items-center mb--10'>
                 <span className='font--left'>
-                <span className='color--error font--bold'>{item?.mrp}</span>
-                <p className='font--bold mt--10'>Quantity: {item?.quantity}</p>
+                <span className='color--error font--bold'>{items?.mrp}</span>
+                <p className='font--bold mt--10'>Quantity: {items?.quantity}</p>
                </span>
                 <span className='counter bg--radius'>
                     <button className='mr--10 fs--20 font--bold'>-</button>
@@ -76,10 +84,10 @@ console.log(item);
 
         <p className='mb--10 mt--10 fs--20 font--bold'>Addons</p>
         <div className='flex'>
-        {smallCardDetails.map((items, index)=>{
+        {smallCardDetails.map((list, index)=>{
             return(
               <React.Fragment key={`cart-${index}`}>
-                 <SmallCart items={items}/>
+                 <SmallCart list={list}/>
               </React.Fragment>
             )
         })}
@@ -87,9 +95,10 @@ console.log(item);
         </div>
         <div className="font--left mt--10">
             <span className=' fs--18 font--bold'>Total Amount: <span className='color--error'>₹500</span></span>
-            <button className='bg--error color--white fs--18 width--column-one bg--radius pt--5 pb--5 mt--10 font--bold' onClick={()=>dispatch(addToCart(item))}>Add To Cart</button>
+            <button className='bg--error color--white fs--18 width--column-one bg--radius pt--5 pb--5 mt--10 font--bold' onClick={()=>handleAddToCart(items)}>Add To Cart</button>
         </div>
      </div>
+
      </>
 
     )

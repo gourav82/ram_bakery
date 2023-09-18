@@ -7,6 +7,7 @@ import 'react-modern-drawer/dist/index.css'
 import AppProvider from '../context/AppProvider';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App({ Component, pageProps }) {
   return <>

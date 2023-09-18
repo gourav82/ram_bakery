@@ -1,19 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick';
 import Card from './Card';
-import product from "../../public/assets/json/product.json"
-import { latestProductAPI } from '../../services/Product';
+import { popularProductAPI } from '../../services/Product';
+import Modal from '../core/Modal';
+import ModalCard from './ModalCard';
 
 
-const PopularItems = ({handleModal}) => {
+const PopularItems = ({displayToast}) => {
   const [latestpro, setLatestPro] = useState();
+  const [modal, setModal] = useState(false);
+  const [items,setItems] = useState({});
+
+  const handleModal =(item)=>{
+    setModal(!modal);
+    setItems(item);
+    console.log(items, "helooo uhfayhbf  ufciaf a")
+}
 
 useEffect(()=>{
-    getLatestPro();
+    getpopularPro();
 },[])
 
-const getLatestPro=()=>{
-    latestProductAPI().then((result) => {
+const getpopularPro=()=>{
+  popularProductAPI().then((result) => {
         setLatestPro(result);
         // console.log(result);
     }).catch((err) => {
@@ -57,7 +66,7 @@ const getLatestPro=()=>{
           ]
       };
   return (
-    <Slider {...settings} className='container--responsive'>
+    <>    <Slider {...settings} className='container--responsive'>
    {latestpro?.products?.map((item,index)=>{
                 return(
                <div key={`peoduct-${index}`} >
@@ -66,6 +75,14 @@ const getLatestPro=()=>{
                 )
             })}
    </Slider>
+
+{modal? 
+  <Modal show={modal} position="left" className={"width--column-three-5"} isDrawer={false} hideClose={true} close={() => setModal(false)}>
+  <ModalCard items={items} handleModal={handleModal} displayToast={displayToast}/>
+ </Modal>
+  : ""}
+  </>
+
     )
 }
 
