@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { BsSuitHeart,BsStar,BsStarFill } from "react-icons/bs";
-import Modal from './ModalCard';
-import { getImageUrl } from '../../helper/BaseUrl';
 
 
 const Card = ({item,latest,handleModal}) => {
@@ -14,7 +12,7 @@ const Card = ({item,latest,handleModal}) => {
     <>
             <div className={`bg--radius bg--shadow ${latest? "latest": "cat width--column-90 mt--30 mb--30 ml--10"}`}>
             <div className="position--relative flex flex--justify-content-end flex--align-items-start">
-            <Image src={getImageUrl(item.image,'product')} width={300} height={200} alt='' className='bg--radius'/>
+            <Image src={item.image} width={300} height={200} alt='' className='bg--radius'/>
              <BsSuitHeart className='position--absolute color--white mt--10 mr--10 font--bold fs--20'/> 
              </div>
              <div className="font--center mt--20">
@@ -34,12 +32,12 @@ const Card = ({item,latest,handleModal}) => {
                         })
                     }
                     </ul>
-                    <span className='flex flex--align-items-center flex--justify-content-around mt--20'>
-                        <span className='color--grey font--strike-through'>₹150</span>
-                        <span className='color--error font--bold '>₹{item.price}</span>
+                    <span className='flex flex--align-items-center flex--justify-content-around mt--10'>
+                        <span className='color--grey'>Capacity</span>
+                        <span className='color--error font--bold '>{item.capacity}</span>
                     </span>
 
-                    <button className='bg--error color--white bg--radius pd--10 mb--20 mt--15' onClick={()=>handleModal(item)}>Quick View</button>
+                    <button className='bg--error color--white bg--radius pd--10 mb--5 mt--10' onClick={()=>handleModal(item)}>Quick View</button>
              </div>
          </div>
 

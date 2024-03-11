@@ -22,7 +22,13 @@ const HeaderRight = ({toggleDrawer}) => {
             <span className='fs--12 header--menu-cart position--absolute bg--error flex flex--justify-content-center flex--align-items-center'>{cartList.total}</span>
           </span>
         }
+        {isMobile || isIpad?
           <BsList className='fs--25 ml--30' onClick={toggleDrawer}/>
+          : 
+          <Link href={"/profile"}>
+          <BsList className='fs--25 ml--30'/>
+          </Link>
+        }
         </div>
       </div>
 

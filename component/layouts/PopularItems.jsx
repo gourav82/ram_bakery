@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick';
 import Card from './Card';
-import { popularProductAPI } from '../../services/Product';
 import Modal from '../core/Modal';
 import ModalCard from './ModalCard';
+import popularJson from "../../json/letestItemJson"
 
 
 const PopularItems = ({displayToast}) => {
@@ -17,18 +17,7 @@ const PopularItems = ({displayToast}) => {
     console.log(items, "helooo uhfayhbf  ufciaf a")
 }
 
-useEffect(()=>{
-    getpopularPro();
-},[])
 
-const getpopularPro=()=>{
-  popularProductAPI().then((result) => {
-        setLatestPro(result);
-        // console.log(result);
-    }).catch((err) => {
-        
-    });
-}
     var settings = {
       autoplay:true,
         arrows: true,
@@ -67,7 +56,7 @@ const getpopularPro=()=>{
       };
   return (
     <>    <Slider {...settings} className='container--responsive'>
-   {latestpro?.products?.map((item,index)=>{
+   {popularJson.map((item,index)=>{
                 return(
                <div key={`peoduct-${index}`} >
                     <Card item={item} handleModal={handleModal}/>

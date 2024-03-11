@@ -11,7 +11,8 @@ const Footer = () => {
 <div className="footer pb--20 pt--50">
       <div className="container--responsive flex flex--justify-content-between pb--60">
         <div className="footer--logo">
-         <span className='fs--48 color--error font--bold'>Spice Heaven</span>
+         <span className='fs--35 color--error font--bold'>Ram Bakery Machine</span>
+         <p className='fs--35 color--error font--bold'> And Engineering</p>
         <p className='font--medium mt--20 mb--10'>NEWS LETTER</p>
         <span className='fs--18'>Subscribe to our news letter to get latest updates</span>
         <Input/>
@@ -45,7 +46,8 @@ const Footer = () => {
         </span>
       </div>
       <div className="footer--copyRight flex flex--justify-content-center flex--align-items-center pt--20">
-         <span className='fs--12 color--grey font--medium'>Copy-Right &copy; 2021 SpiceHeaven</span>
+         <span className='fs--12 color--grey font--medium'>Copy-Right &copy; 2021 Ram Bakery Machine
+And Engineering</span>
       </div>
       </div>
   }

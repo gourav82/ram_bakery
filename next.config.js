@@ -13,4 +13,10 @@ const nextConfig = {
     ],
   }}
 
+  module.exports = {
+    plugins: {
+      autoprefixer: {},
+    },
+}
+
 module.exports = nextConfig

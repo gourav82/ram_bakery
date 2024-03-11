@@ -1,22 +1,21 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
-import { allCategoryAPI } from '../../services/Product';
-import { getImageUrl } from '../../helper/BaseUrl';
+import categoryJson from "../../json/categoryJson"
 
 const Allcategory = () => {
 const [category, setCategory] = useState();
 
 
-useEffect(()=>{
-    categoryApi();
-},[])
+// useEffect(()=>{
+//     categoryApi();
+// },[])
 
-const categoryApi =()=>{
-    allCategoryAPI().then((res)=>{
-        setCategory(res);
-    })
-}
+// const categoryApi =()=>{
+//     allCategoryAPI().then((res)=>{
+//         setCategory(res);
+//     })
+// }
 
     var settings = {
         arrows: true,
@@ -58,10 +57,10 @@ const categoryApi =()=>{
        <div className="container--responsive font--center mt--50 mb--50">
             <span className='fs--20 font--bold mb--20'>All Category</span>
             <Slider {...settings}>
-                {category?.map((items,index)=>{
+                {categoryJson?.map((items,index)=>{
                     return(
             <div className='category' key={`cat-${index}`}>
-                <Image src={getImageUrl(items.image, "category")} alt={items.name} width={120} height={120} className='mb--15 mt--20'/>
+                <Image src={items.image} alt={items.name} width={120} height={120} className='mb--15 mt--20'/>
                 <span className='fs--15 font--bold pt--10'>{items.name}</span>
             </div>
                     )

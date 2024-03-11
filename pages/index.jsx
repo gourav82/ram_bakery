@@ -3,7 +3,6 @@ import Home from "../component/layouts/Home";
 import Lodding from "../component/layouts/Lodding";
 import { getConfig, saveConfig } from "../helper/BaseUrl";
 import { isEmptyObj } from "../helper/Utils";
-import { getUrlFromStorageAPI } from "../services/Common";
 
  const HomePage = () =>{
   const [isLoading, setIsLoading] = useState(true);

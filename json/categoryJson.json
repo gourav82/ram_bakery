@@ -1,0 +1,91 @@
+[   {
+        "id": 1,
+        "name":"Planetary Mixer",
+        "category": "Mixer",
+        "image": "/assets/image/sm-80l.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Spiral Mixer",
+        "category": "Mixer",
+        "image": "/assets/image/SM2-10-spiral.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Divider Rounder",
+        "category": "Divider Rounder",
+        "image": "/assets/image/SM-330.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Moulder",
+        "category": "Moulder",
+        "image": "/assets/image/SM-230J.jpg"
+    },
+    {
+        "id": 5,
+        "name":"Sheeter",
+        "category": "Sheeter",
+        "image": "/assets/image/SMS-30.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Proofer/Retarder",
+        "category": "Proofer/Retarder",
+        "image": "/assets/image/dc-8r.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Convection Oven",
+        "category": "Oven",
+        "image": "/assets/image/sm-810e.jpg"
+    },
+    {
+        "id": 8,
+        "name":"Rack Oven",
+        "category": "Oven",
+        "image": "/assets/image/LRO-1E.jpg"
+    },
+    {
+        "id": 9,
+        "name":"Deck Oven",
+        "category": "Oven",
+        "image": "/assets/image/SMS-30.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Tunnel Oven",
+        "category": "Oven",
+        "image": "/assets/image/SMS-30.jpg"
+    },
+    {
+        "id": 10,
+        "name":"Slicer",
+        "category": "Slicer",
+        "image": "/assets/image/SMS-30.jpg"
+    },
+    {
+        "id": 11,
+        "name":"Others",
+        "category": "Others",
+        "image": "/assets/image/SMS-30.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Make up lines",
+        "category": "lines",
+        "image": "/assets/image/SMS-30.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Food Service Equipment",
+        "category": "Service",
+        "image": "/assets/image/SMS-30.jpg"
+    },
+    {
+        "id": 4,
+        "name":"In Store Equipment",
+        "category": "Store",
+        "image": "/assets/image/SMS-30.jpg"
+    }
+]

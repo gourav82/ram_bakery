@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { userData } from "../../../redux/slices/authSlice"
 import Otp from './Otp';
 
 const SignUpModal = ({handleShowForm}) => {
-const dispatch = useDispatch();
+
+const [phoneNumber, setPhoneNumber] = useState('');
+const [verificationCode, setVerificationCode] = useState('');
 
   const [formValue, setFormValue] = useState({
     name: "",
@@ -24,13 +24,13 @@ const dispatch = useDispatch();
       [e.target.name]: e.target.value,
     }))
   }
-  
+
+  //  =============Submit form data
   const handleSubmit =(e)=>{
   e.preventDefault();
 const newRecord = {...formValue, id:""}
 setSubData([...subData,newRecord]);
 console.log(subData)
- dispatch(userData(subData));
 
 //form validation
 
@@ -64,9 +64,6 @@ if(!formValue.password.trim()){
 }
 setErrros(validError);
 
-if(Object.keys(validError).length === 0){
-  setShowOtpModal();
-}
 }
 
 
@@ -78,15 +75,20 @@ if(Object.keys(validError).length === 0){
             <input type="email" name='email' value={formValue.email} placeholder='Email id..' className='input-login'onChange={(e)=>handleChange(e)}/>
             {errors.email && <span className='color--error fs--12'>{errors.email}</span>}
 
-            <input type="tel" maxLength={10} name='mobile' value={formValue.mobile} placeholder='Mobile no..' className='input-login' onChange={(e)=>handleChange(e)}/>
+            <input type="tel" maxLength={13} name='mobile' value={formValue.mobile} placeholder='Mobile no..' className='input-login' onChange={(e)=>handleChange(e)}/>
             {errors.mobile && <span className='color--error fs--12'>{errors.mobile}</span>}
+           
+           
             <input type="text" name='address' value={formValue.address} placeholder='Address..' className='input-login'onChange={(e)=>handleChange(e)}/>
             {errors.address && <span className='color--error fs--12'>{errors.address}</span>}
             <input type="zip" maxLength={6} name='zip' value={formValue.zip} placeholder='Pin code..' className='input-login'onChange={(e)=>handleChange(e)}/>
             {errors.zip && <span className='color--error fs--12'>{errors.zip}</span>}
             <input type="password" name='password' value={formValue.password} placeholder='Password' className='input-login' onChange={(e)=>handleChange(e)}/>
             {errors.password && <span className='color--error fs--12'>{errors.password}</span>}
-            <button className='pt--10 pb--10 bg--radius bg--error block--auto width--column-40 mt--10 fs--18 color--white' type='submit' onClick={()=>setShowOtpModal()}>SignUp</button>
+           
+           <div id='recaptcha-container' className='recaptcha-container'/>
+           
+            <button className='pt--10 pb--10 bg--radius bg--error block--auto width--column-40 mt--10 fs--18 color--white' type='submit'>SignUp</button>
             <p className='font--center mt--10' onClick={handleShowForm}>
                    <button className='color--grey fs--14'>Already have an Account? <span className='color--error font--bold'>Login</span></button>
             </p>

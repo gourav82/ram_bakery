@@ -3,22 +3,11 @@ import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 import { BsChevronDown } from "react-icons/bs";
 import Animation from '../core/Animation';
-import { bannerAPI } from '../../services/Product';
+import letestItem from "../../json/letestItemJson"
 
 const MainBanner = () => {
 const [banner, setBanner] = useState();
 
-
-useEffect(()=>{
-  bannerData();
-},[])
-
-const bannerData = ()=>{
-  bannerAPI().then((resp)=>{
-    setBanner(resp);
-    // console.log(resp);
-  })
-}
 
   var settings = {
     arrows: false,
@@ -63,22 +52,22 @@ const bannerData = ()=>{
   return (
     <div className="banner">
       <div className="banner--table flex flex--justify-content-between flex--align-items-center mt--10 mb--40">
-        <div className="container--responsive banner--table-slider pd--15 bg--radius">
+        <div className="container--responsive banner--table-slider pd--10 bg--radius">
+          <p className='font--center fs--25 color--white'>A Product By SINMAG</p>
           <Slider {...settings}>
-            {mainSlide.map((item, index) => {
+            {letestItem.map((item, index) => {
               return (
-                <div key={`banner-${index}`} className="image pd--20 pt--50">
-                  <Image src={item.img} width={500} height={200} alt='' className='bg--radius' />
-                  <button className='fs--20 bg--error bg--radius pd--10 color--white font--bold'>{item.btn}</button>
+                <div key={`banner-${index}`} className="image pd--10 pt--20">
+                  <Image src={item.image} width={100} height={200} alt='' className='bg--radius' />
+                  <span className='fs--20 bg--error bg--radius pd--10 color--white font--bold ml--20'>{item.name}</span>
                 </div>
               )
             })}
           </Slider>
         </div>
         <div className="banner--table-book pd--20 bg--radius">
-          <h1 className='fs--28 font--bold '> Let`s Book a Table For You</h1>
-          <span className='fs--16 font--medium'>Dont`t wait in a line to enjoy your meal.</span>
-          <p className='fs--16 mb--10'>Recerve a table in advance with us.</p>
+          <h1 className='fs--28 font--bold '> Let`s Start Your Business with Ram Bakery Machine</h1>
+          
           <p>Location</p>
           <div className="flex flex--justify-content-end flex--align-items-center position--relative mb--15">
             <select name="" className="location">

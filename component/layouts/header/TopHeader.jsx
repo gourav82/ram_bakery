@@ -32,7 +32,7 @@ const TopHeader = () => {
     <>
      <div className="header--top bg--error ">
      <div className="header--top-nav container--responsive flex flex--justify-content-between flex--align-items-center color--white">
-       <span className='font--bold fs--16'>Restaurant is close now</span>
+       <span className='font--bold fs--13'>Ram Bakery Machine And Engineering</span>
        <span>
         <button className='fs--14 font--bold'>
         {checkedLogin.isAuthenticated == true?

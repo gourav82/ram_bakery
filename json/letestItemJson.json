@@ -1,0 +1,90 @@
+[   
+{
+    "id": 1,
+    "name":"Sinmag Planetary Mixer – Belt Drive Series SM-201",
+    "details_image" :"/assets/image/d-sm-201.jpg",
+    "capacity": "20 Ltr",
+    "category": "Mixer",
+    "image": "/assets/image/SM-201.jpg",
+    "relate_image": "/assets/image/SM-401.jpg",
+    "relate_model":"SM-401",
+    "rating": 5,
+    "Features":"SM-201 Bowl capacity: 20 liters SM-401 Bowl capacity: 40 liters Features Standard with bowl, whipping ball, beater and hook. 3 speeds. Mechanical transmission. The machine has to be stopped to change gears"
+},
+{
+    "id": 2,
+    "name":"Sinmag Planetary Mixer – Table Model SM-5L",
+    "details_image" :"/assets/image/d-SM-5L.jpg",
+    "capacity": "5 Ltr",
+    "category": "Mixer",
+    "image": "/assets/image/SM-5L.jpg",
+    "relate_image": "/assets/image/SM-5L.jpg",
+    "relate_model":"SM-5L",
+    "rating": 5,
+    "Features":"SM-5L: Bowl capacity: 5 liters Features Standard with bowl, whipping ball, beater and hook. Easy to move and operate. Lasting for long time. Used for eggs mixing, ﬂour kneading, mush potato mixing etc."
+},
+
+{
+    "id": 3,
+    "name":"Sinmag Planetary Mixer – Digital Series SM-80L",
+    "details_image" :"/assets/image/d-sm-80l.jpg",
+    "capacity": "80 Ltr",
+    "category": "Mixer",
+    "image": "/assets/image/SM-80l.jpg",
+    "relate_image": "/assets/image/SM-60l.jpg",
+    "relate_model":"SM-60l",
+    "rating": 5,
+    "Features":"SM-20L Bowl capacity: 20 liters SM-40L Bowl capacity: 40 liters SM-60L/60LM Bowl capacity: 60 liters SM-80L Bowl capacity: 80 liters Features Digital panel. Drawings, descriptions and photos are not contractual and can be modified. 10 speeds changed by inverter. Standard with bow|, whipping ball, beater and hook. SM-60LM & SM80L:with automatic bowl lifting. Optionally available with reduction bowl. With a safety grid to protect operator. Optional bowls."
+},
+
+{
+    "id": 4,
+    "name":"Sinmag Planetary Mixer – Digital Series SM-60L/ 60LM",
+    "details_image" :"/assets/image/d-sm-60l.jpg",
+    "capacity": "60 Ltr",
+    "category": "Mixer",
+    "image": "/assets/image/sm-60l.jpg",
+    "relate_image": "/assets/image/SM-40L.jpg",
+    "relate_model":"SM-40L",
+    "rating": 5,
+    "Features":"SM-20L Bowl capacity: 20 liters SM-40L Bowl capacity: 40 liters SM-60L/60LM Bowl capacity: 60 liters SM-80L Bowl capacity: 80 liters Features Digital panel. Drawings, descriptions and photos are not contractual and can be modified. 10 speeds changed by inverter. Standard with bow|, whipping ball, beater and hook. SM-60LM & SM80L:with automatic bowl lifting. Optionally available with reduction bowl. With a safety grid to protect operator. Optional bowls"
+},
+
+{
+    "id": 5,
+    "name":"Sinmag Planetary Mixer – Digital Series SM-40L",
+    "details_image" :"/assets/image/d-sm-40L.jpg",
+    "capacity": "40 Ltr",
+    "category": "Mixer",
+    "image": "/assets/image/sm-40L.jpg",
+    "relate_image": "/assets/image/sm-80l.jpg",
+    "relate_model":"SM-80L",
+    "rating": 5,
+    "Features":"SM-20L Bowl capacity: 20 liters SM-40L Bowl capacity: 40 liters SM-60L/60LM Bowl capacity: 60 liters SM-80L Bowl capacity: 80 liters Features Digital panel. Drawings, descriptions and photos are not contractual and can be modified. 10 speeds changed by inverter. Standard with bow|, whipping ball, beater and hook. SM-60LM & SM80L:with automatic bowl lifting. Optionally available with reduction bowl. With a safety grid to protect operator. Optional bowls."
+},
+{
+    "id": 6,
+    "name":"Sinmag Planetary Mixer – Digital Series SM-20L",
+    "details_image" :"/assets/image/d-sm-40L.jpg",
+    "capacity": "20 Ltr",
+    "category": "Mixer",
+    "image": "/assets/image/sm-20l.jpg",
+    "relate_image": "/assets/image/sm-80l.jpg",
+    "relate_model":"SM-80L",
+    "rating": 5,
+    "Features":"SM-20L Bowl capacity: 20 liters SM-40L Bowl capacity: 40 liters SM-60L/60LM Bowl capacity: 60 liters SM-80L Bowl capacity: 80 liters Features Digital panel. Drawings, descriptions and photos are not contractual and can be modified. 10 speeds changed by inverter. Standard with bow|, whipping ball, beater and hook. SM-60LM & SM80L:with automatic bowl lifting. Optionally available with reduction bowl. With a safety grid to protect operator. Optional bowls."
+},
+{
+    "id": 7,
+    "name":"Planetary Mixer – Clutch System SM-600C",
+    "details_image" :"/assets/image/d-sm-600c.jpg",
+    "capacity": "60 Ltr",
+    "category": "Mixer",
+    "image": "/assets/image/sm-600c.jpg",
+    "relate_image": "/assets/image/sm-100c.jpg",
+    "relate_model":"SM-1OOC",
+    "rating": 5,
+    "Features":"SM-1OOC Bowl capacity: 10 liters SM-200C Bowl capacity: 20 liters SM-300C Bowl capacity: 30 liters SM-5OOC Bowl capacity: 50 liters SM-600C Bowl capacity: 60 liters Features Standard with bowl, whipping ball, beater and hook. 3 speeds. Mechanical transmission. The machine has to be stopped to change gears."
+}
+
+]

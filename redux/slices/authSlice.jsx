@@ -42,11 +42,9 @@ const authRegSlice = createSlice({
 
          }
     },
-    extraReducers:{
-        [setAuthHanlder.fulfilled]:(state,action)=>{
-           
-        },
-        [setCheckUser.fulfilled]:(state,action)=>{
+    extraReducers: (builder) => {
+        // Add reducers for additional action types here, and handle loading state as needed
+        builder.addCase(setCheckUser.fulfilled, (state, action) => {
             const storedUser = JSON.parse(localStorage.getItem('register'));
             if(storedUser.user.find((ele)=>(ele.email == action.payload.user || ele.mobile == action.payload.user) && (ele.password == action.payload.password))){
                 
@@ -54,8 +52,23 @@ const authRegSlice = createSlice({
                 localStorage.setItem("isAuthenticated", true);
             }else
               state.isAuthenticated = false;
-        },
-    }
+            //  state.entities.push(action.payload)
+        })
+      },
+    // extraReducers:{
+    //     [setAuthHanlder.fulfilled]:(state,action)=>{
+           
+    //     },
+    //     [setCheckUser.fulfilled]:(state,action)=>{
+    //         const storedUser = JSON.parse(localStorage.getItem('register'));
+    //         if(storedUser.user.find((ele)=>(ele.email == action.payload.user || ele.mobile == action.payload.user) && (ele.password == action.payload.password))){
+                
+    //             state.isAuthenticated = true;
+    //             localStorage.setItem("isAuthenticated", true);
+    //         }else
+    //           state.isAuthenticated = false;
+    //     },
+    // }
 });
 
 export const {userData,logoutUser} = authRegSlice.actions
