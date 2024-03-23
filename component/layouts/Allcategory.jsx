@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 import categoryJson from "../../json/categoryJson"
@@ -60,7 +59,7 @@ const [category, setCategory] = useState();
                 {categoryJson?.map((items,index)=>{
                     return(
             <div className='category' key={`cat-${index}`}>
-                <Image src={items.image} alt={items.name} width={120} height={120} className='mb--15 mt--20'/>
+                <img src={items.image} alt={items.name} width={120} height={120} className='mb--15 mt--20'/>
                 <span className='fs--15 font--bold pt--10'>{items.name}</span>
             </div>
                     )
@@ -73,56 +72,3 @@ const [category, setCategory] = useState();
 
 export default Allcategory
 
-
-// const category = [
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     },
-//     {
-//         img: "/assets/image/biryani.jpg",
-//         alt: "spice heaven dish",
-//         catName:"Biryani"
-//     }
-// ]

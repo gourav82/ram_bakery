@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { BsSuitHeart, BsX,BsStar ,BsStarFill} from "react-icons/bs";
 import SmallCart from './SmallCart';
@@ -29,7 +28,7 @@ const ModalCard = ({handleModal,items,displayToast}) => {
      <div className="modal font--right pl--10 pr--10 pb--5">
         <BsX onClick={handleModal} className='fs--22 color--error'/>
         <div className={`modal--product flex ${isMobile || isIpad? "flex--direction-column":"flex--justify-content-between"}`}>
-            <Image src={items.image} alt="" width="150" height="100" className={`bg--radius mb--10 mr--10 ${isMobile || isIpad? "width--column-90":"width--column-40"}`}/>
+            <img src={items.image} alt="" width="150" height="100" className={`bg--radius mb--10 mr--10 ${isMobile || isIpad? "width--column-90":"width--column-40"}`}/>
             <div className={`${isMobile || isIpad? "width--column-one":"width--column-60"}`}>
                 <span className='flex flex--justify-content-between flex--align-items-center font--left mt--10'>
                     <span className='color--error fs--18 font--bold'>{items?.name}</span>
@@ -58,7 +57,7 @@ const ModalCard = ({handleModal,items,displayToast}) => {
          <div className="modal--description font--left">
         <p className='mb--5 fs--18 font--bold color--error'>Description</p>
         <span className='flex flex--justify-content-between flex--align-items-center mb--5'>
-        <Image src={items.details_image} width={1000} height={500} alt=''/>
+        <img src={items.details_image} width={1000} height={500} alt=''/>
         </span>
         <p className='mb--5 fs--18 font--bold color--error'>Features</p>
         <span className='flex flex--justify-content-between flex--align-items-center'>{items.Features}</span>
@@ -80,24 +79,3 @@ const ModalCard = ({handleModal,items,displayToast}) => {
 
 export default ModalCard
 
-
-const smallCardDetails =[
-    {
-        img:"/assets/image/coke.png",
-        name:"Coke",
-        price:"₹100"
-
-    },
-    {
-        img:"/assets/image/water.png",
-        name:"Water",
-        price:"₹100"
-
-    },
-    {
-        img:"/assets/image/coke.png",
-        name:"Coke",
-        price:"₹100"
-
-    }
-]

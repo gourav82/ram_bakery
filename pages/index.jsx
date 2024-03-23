@@ -13,11 +13,11 @@ import { isEmptyObj } from "../helper/Utils";
 
   const saveOnLoad =()=>{
    let config =getConfig();
-   if(isEmptyObj(config))
-    getUrlFromStorageAPI().then((res)=>{
-      saveConfig(res);
+   if(isEmptyObj(config)){
+    
+      saveConfig();
       setIsLoading(false);
-    });
+    }
     else
     setIsLoading(false);
 

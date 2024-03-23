@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import { BsTrashFill, BsStarFill } from "react-icons/bs";
 import UseCheckMobileScreen from '../../hooks/UseCheckMobileScreen';
@@ -19,7 +18,7 @@ const CartProduct = ({data}) => {
   return (
     <div className="cart--product bg--shadow bg--radius pt--10 pl--10 pr--10 pb--10 flex flex--align-items-center flex--justify-content-between mb--10">
       <div className="cart--product-img flex flex--align-items-center flex--justify-content-center">
-        <Image src={getImageUrl(data.image,'product')} alt="" width="85" height="100" className='mr--10 bg--radius' />
+        <img src={getImageUrl(data.image,'product')} alt="" width="85" height="100" className='mr--10 bg--radius' />
         <span className='flex flex--direction-column'>
           <span>{data.name}</span>
           <ul className='flex mb--5 mt--5'>

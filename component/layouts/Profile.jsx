@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import { useState } from 'react';
@@ -30,7 +29,7 @@ const Profile = () => {
                 </label>
               </form>
               <div className="avatar-preview">
-              <Image src={img} alt="" width="570" height="570"/>
+              <img src={img} alt="" width="570" height="570"/>
               </div>
             </div>
             <div className='profile--image-text mt--10'>

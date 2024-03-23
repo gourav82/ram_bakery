@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React, { useState } from 'react'
 import { BsSuitHeart,BsStar,BsStarFill } from "react-icons/bs";
 
@@ -12,7 +11,7 @@ const Card = ({item,latest,handleModal}) => {
     <>
             <div className={`bg--radius bg--shadow ${latest? "latest": "cat width--column-90 mt--30 mb--30 ml--10"}`}>
             <div className="position--relative flex flex--justify-content-end flex--align-items-start">
-            <Image src={item.image} width={300} height={200} alt='' className='bg--radius'/>
+            <img src={item.image} width={300} height={200} alt='' className='bg--radius'/>
              <BsSuitHeart className='position--absolute color--white mt--10 mr--10 font--bold fs--20'/> 
              </div>
              <div className="font--center mt--20">

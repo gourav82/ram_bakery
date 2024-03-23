@@ -17,7 +17,6 @@ const [modal, setModal] = useState(false);
     return (
         <>
         <div className="container--responsive font--center">
-            <span className='fs--25 font--bold'>Latest Items</span>
             <div className="flex flex--wrap mt--30">
             {letestItemJson.map((item,index)=>{
                 return(

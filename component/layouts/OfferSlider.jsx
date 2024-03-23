@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import Slider from 'react-slick'
 
@@ -19,7 +18,7 @@ const OfferSlider = () => {
         {offerSlider.map((items,index)=>{
             return(
     <div className='category' key={`cat-${index}`}>
-        <Image src={items.img} alt={items.alt} width={1600} height={100} className='mb--15 mt--20'/>
+        <img src={items.img} alt={items.alt} width={1600} height={100} className='mb--15 mt--20'/>
     </div>
             )
         })}

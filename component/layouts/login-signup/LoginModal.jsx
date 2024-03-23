@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Image from 'next/image';
 import Link from 'next/link';
 import {BsX} from "react-icons/bs";
 import SignUpModal from './SignUp';
@@ -17,7 +16,7 @@ const LoginModal = ({setLoginModal}) => {
 
      <div className="login container--responsive">
             <div className="login--logo flex flex--justify-content-between flex--align-items-center">
-            <Link href={"/"}> <Image src="/assets/image/logo.png" alt="" width="40" height="40"/></Link>
+            <Link href={"/"}> <img src="/assets/image/logo.png" alt="" width="40" height="40"/></Link>
             <span className='color--error fs--20'>
                 Login | Sign-Up
             </span>
