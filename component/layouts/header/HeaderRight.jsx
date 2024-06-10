@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Input from '../../core/Input'
-import { BsCart3, BsList } from "react-icons/bs";
+import { BsCart3, BsList, BsWhatsapp} from "react-icons/bs";
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
@@ -22,13 +22,16 @@ const HeaderRight = ({toggleDrawer}) => {
             <span className='fs--12 header--menu-cart position--absolute bg--error flex flex--justify-content-center flex--align-items-center'>{cartList.total}</span>
           </span>
         }
-        {isMobile || isIpad?
+        {/* {isMobile || isIpad?
           <BsList className='fs--25 ml--30' onClick={toggleDrawer}/>
           : 
           <Link href={"/profile"}>
           <BsList className='fs--25 ml--30'/>
           </Link>
-        }
+        } */}
+        <Link href={"https://wa.me/918955768814?text=Hello, I have urgent requirment ?"}>
+        <BsWhatsapp className='fs--25 ml--30'/>
+        </Link>
         </div>
       </div>
 
