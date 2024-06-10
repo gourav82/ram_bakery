@@ -16,16 +16,16 @@ const Contact = () => {
         <div className=" flex flex--direction-column">
             <span className='bg--shadow mb--20 pd--15 bg--radius'>
             <span className='color--error fs--20'>Mobile No.</span>
-            <p className='mt--10'>7766885532</p>
+            <p className='mt--10'>9017137794</p>
             </span>
             <span className='bg--shadow mb--20  pd--15 bg--radius'>
             <span className='color--error fs--20'>Email</span>
-            <p className='mt--10'>phonikindustries@gmail.com</p>
+            <p className='mt--10'>brajesh.insearch@gmail.com</p>
             </span>
             <span className='bg--shadow  pd--15 bg--radius'>
             <span className='color--error fs--20'>Address</span>
-            <p className='mt--10'>New Mahada Ekta Nagar Kandivali</p>
-            <span>West, Mumbai Maharastra 400095</span>
+            <p className='mt--10'>Navadih Near Service Road</p>
+            <span>Dhanbad Jharkhand India 828104</span>
             </span>
         </div>
         <div className="">
@@ -40,7 +40,7 @@ const Contact = () => {
          
         </div>
         <div className="">
-        <Image src="/assets/image/map.webp" alt="" width="500" height="500"/>
+        <img src="/assets/image/map.webp" alt="" width="500" height="500"/>
         </div>
     </div>
     </div>

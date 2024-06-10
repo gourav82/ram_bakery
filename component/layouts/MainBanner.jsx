@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
-import { BsChevronDown } from "react-icons/bs";
 import Animation from '../core/Animation';
 import letestItem from "../../json/letestItemJson"
 import Link from 'next/link';

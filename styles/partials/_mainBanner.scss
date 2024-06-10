@@ -1,10 +1,10 @@
 .banner{
-    background-image: url("/assets/image/main-banner.jpg");
+    background-image: url("/assets/image/main-banner1.jpg");
     background-size: cover;
     height: 80vh;
     
     @include max(1024) {
-      height: 70vh;
+      height: 76vh;
 
       } 
     &--table{
@@ -14,7 +14,11 @@
         @include max(1024) {
         flex-direction: column;
         width: 100%;
+        @include max(1024) {
+          height: 70vh;
+          margin: 85px auto 0 auto;
 
+          }
         } 
         &-slider{
          width: 55%;
@@ -73,8 +77,8 @@
           }
           .btn_ripple {
             position: absolute;
-            bottom: -100px;
-            left: 130px;
+            bottom: -120px;
+            left: 114px;
             border: none;
             outline: none;
             width: 70px;

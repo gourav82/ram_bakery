@@ -5,6 +5,9 @@ import PopularItems from './PopularItems'
 import LatestItems from './LatestItems'
 import MainBanner from './MainBanner'
 import { toast,ToastContainer } from 'react-toastify'
+import Test from './Test'
+import StopWatch from './StopWatch'
+import Video from './Video'
 
 const Home = () => {
   const displayToast = () => {
@@ -14,10 +17,11 @@ const Home = () => {
     <>
     <MainBanner/>
      <PopularItems displayToast={displayToast}/>
+     {/* <Video/> */}
     <OfferSlider/>
     <Allcategory/>
-    <LatestItems displayToast={displayToast}/>
-   
+    {/* <StopWatch/> */}
+    <LatestItems displayToast={displayToast}/>   
     <ToastContainer
         position='top-center'
         autoClose={5000}
