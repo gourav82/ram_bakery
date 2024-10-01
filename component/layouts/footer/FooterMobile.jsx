@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
-import { BsHouseFill, BsCart3,BsFillBagHeartFill,BsFillSuitHeartFill,BsGridFill } from "react-icons/bs";
+import { BsHouseFill, BsCart3,BsFillBagHeartFill,BsFillSuitHeartFill,BsGridFill, BsWhatsapp } from "react-icons/bs";
 import { useSelector } from 'react-redux';
 
 
@@ -29,8 +29,10 @@ const FooterMobile = () => {
              <span>Favourite</span>
             </li>
             <li className='flex flex--direction-column flex--align-items-center'>
-            <Link href={"/"}><BsGridFill className='fs--25 color--grey'/></Link>
-             <span>Menu</span>
+              <Link href={"https://wa.me/919017137794?text=Hello, I have urgent requirment. "} className='fs--25 color--grey' target="_blank">
+                <BsWhatsapp />
+              </Link>
+             <span>Chat</span>
             </li>
         </ul>
     )

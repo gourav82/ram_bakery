@@ -15,8 +15,8 @@ const Home = () => {
   return (
     <>
     <MainBanner/>
-     <PopularItems displayToast={displayToast}/>
-     {/* <Video/> */}
+    <PopularItems/>
+     {/* <Video  embedID="PIJy2-lpwuk"/> */}
     <OfferSlider/>
     <Allcategory/>
     {/* <StopWatch/> */}

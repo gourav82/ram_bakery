@@ -1,0 +1,91 @@
+[   {
+    "id": 1,
+    "name":"Planetary Mixer",
+    "category": "Mixer",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 2,
+    "name":"Spiral Mixer",
+    "category": "Mixer",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 3,
+    "name":"Divider Rounder",
+    "category": "Divider Rounder",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 4,
+    "name":"Moulder",
+    "category": "Moulder",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 5,
+    "name":"Sheeter",
+    "category": "Sheeter",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 6,
+    "name":"Proofer/Retarder",
+    "category": "Proofer/Retarder",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 7,
+    "name":"Convection Oven",
+    "category": "Oven",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 8,
+    "name":"Rack Oven",
+    "category": "Oven",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 9,
+    "name":"Deck Oven",
+    "category": "Oven",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 4,
+    "name":"Tunnel Oven",
+    "category": "Oven",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 10,
+    "name":"Slicer",
+    "category": "Slicer",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 11,
+    "name":"Others",
+    "category": "Others",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 4,
+    "name":"Make up lines",
+    "category": "lines",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 4,
+    "name":"Food Service Equipment",
+    "category": "Service",
+    "url": "PIJy2-lpwuk"
+},
+{
+    "id": 4,
+    "name":"In Store Equipment",
+    "category": "Store",
+    "url": "PIJy2-lpwuk"
+}
+]

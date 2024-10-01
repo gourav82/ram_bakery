@@ -8,6 +8,8 @@
     margin-bottom: 20px;
     @include max(1024) {
      width: 47%;
+     margin-right: 18px;
+
     } 
     &:nth-child(6n+6){
         margin-right: 0;

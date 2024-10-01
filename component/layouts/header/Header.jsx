@@ -4,6 +4,7 @@ import HeaderRight from './HeaderRight'
 import TopHeader from './TopHeader'
 import Drawer from 'react-modern-drawer'
 import Link from 'next/link'
+import { FaWhatsappSquare } from 'react-icons/fa'
 
 
 const Header = () => {
@@ -35,6 +36,7 @@ const Header = () => {
             <li className='fs--22 mt--20'><Link href={"/about"}>About</Link></li>
             <li className='fs--22 mt--20'><Link href={"/product"}>Product</Link></li>
             <li className='fs--22 mt--20'><Link href={"/contact"}>Contact</Link></li>
+            
         </ul>
     </div>
       </Drawer>

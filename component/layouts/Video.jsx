@@ -1,12 +1,20 @@
 import React from 'react'
+import Slider from 'react-slick'
 
-const Video = () => {
+const Video = ({embedID}) => {
+
+
   return (
-    <video controls width="500" autoplay muted>
-    <iframe width="500px" src="https://www.youtube.com/watch?v=PIJy2-lpwuk">
+
+    <iframe 
+    width={250}
+    height={250}
+     src={`https://www.youtube.com/embed/${embedID}`}
+     allow='autoplay'
+     
+     >
+        
         </iframe>
-    <p>Sorry, Your Browser  Support Embedded Videos. the </p>
-</video>
   )
 }
 

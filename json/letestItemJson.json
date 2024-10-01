@@ -317,6 +317,42 @@
                 "relate_model": "SM-50T",
                 "rating": 5,
                 "Features": "Features Digital control panel. Solid construction. SM-25, SM-50 single-motor driven. From SM-50T, Two motors. Short mixing time with excellent kneading result. Switch for manual or automatic funtion. Mounted on castors, easily movable. Stainless steel hook and bowl. ABS plastic cover or safety grids cover for choice(SM-25, ABS safety cover only)"
+            },
+            {
+                "id": 26,
+                "name": "Sinmag Spiral Mixer – Fixed Bowl Series SM-60T",
+                "details_image": "/assets/image/fixed_bowl_series_sm.jpg",
+                "capacity": "37.5 Ltr",
+                "category": "Spiral_Mixer",
+                "image": "/assets/image/sm-60t.jpg",
+                "relate_image": "/assets/image/sm-200t.jpg",
+                "relate_model": "SM-200T",
+                "rating": 5,
+                "Features": "Features Digital control panel. Solid construction. SM-25, SM-50 single-motor driven. From SM-50T, Two motors. Short mixing time with excellent kneading result. Switch for manual or automatic function. Mounted on castors, easily movable. Stainless steel hook and bowl. ABS plastic cover or safety grids cover for choice(SM-25, ABS safety cover only)"
+            },
+            {
+                "id": 27,
+                "name": "Sinmag Spiral Mixer–Fixed Bowl Series SM-50T",
+                "details_image": "/assets/image/fixed_bowl_series_sm.jpg",
+                "capacity": "25 Ltr",
+                "category": "Spiral_Mixer",
+                "image": "/assets/image/sm-50t.jpg",
+                "relate_image": "/assets/image/sm-60t.jpg",
+                "relate_model": "SM-50T",
+                "rating": 5,
+                "Features": "Features Digital control panel. Solid construction. SM-25, SM-50 single-motor driven. From SM-50T, Two motors. Short mixing time with excellent kneading result. Switch for manual or automatic funtion. Mounted on castors, easily movable. Stainless steel hook and bowl. ABS plastic cover or safety grids cover for choice(SM-25, ABS safety cover only)"
+            },
+            {
+                "id": 28,
+                "name": "Sinmag Bowl Lifter – For Removable Spiral Mixer BLT-200/1800",
+                "details_image": "/assets/image/d-blt-1800.jpg",
+                "capacity": ".",
+                "category": "Spiral_Mixer",
+                "image": "/assets/image/blt-200-1800.jpg",
+                "relate_image": "/assets/image/sm-50t.jpg",
+                "relate_model": "SM-50T",
+                "rating": 5,
+                "Features": "Features Motorized bowl lifter(BL-120/1800;BL-200/1800) for removable spiral mixer models SM-120a/SM-200a, SM-120a-S/SM-200a-S. BLT-200/1800 for Spiral Mixer model SM-200aT. Save large working time and manpower. Mainly used in large production bakery or big food manufaturing factory, Continuous production, Automatical production line. Can offer special design for safety lifting and tilting of bowls for special working height."
             }
         ]
     },

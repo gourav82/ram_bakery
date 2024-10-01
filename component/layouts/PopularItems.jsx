@@ -3,7 +3,8 @@ import Slider from 'react-slick';
 import Card from './Card';
 import Modal from '../core/Modal';
 import ModalCard from './ModalCard';
-import popularJson from "../../json/letestItemJson"
+import productVideo from "../../json/poductVideo"
+import Video from './Video';
 
 
 const PopularItems = ({ displayToast }) => {
@@ -11,7 +12,7 @@ const PopularItems = ({ displayToast }) => {
   const [modal, setModal] = useState(false);
   const [items, setItems] = useState({});
 
-  const handleModal = (item) => {
+  const handleModal = () => {
     setModal(!modal);
     setItems(item);
   }
@@ -47,35 +48,32 @@ const PopularItems = ({ displayToast }) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
     ]
   };
   return (
-    <>
-      {popularJson.map((list, index) => {
-        return (
-          <Slider {...settings} className='container--responsive' key={index}>
-            {list.product.map((item, index) => {
-              return (
-                <div key={`peoduct-${index}`} >
-                  <Card item={item} handleModal={handleModal} />
-                </div>
+    <div className='container--responsive font--center'>
+     
+            <p className='mt--50 color--error fs--30 mb--20 font--bold'>Our Products Video</p>
+          <Slider {...settings} >
+            {productVideo.map((item, index)=>{
+              return(
+
+                <Video  embedID={item.url} key={index}/>
               )
             })}
 
           </Slider>
-        )
-      })}
 
-      {modal ?
+      {/* {modal ?
         <Modal show={modal} position="left" className={"width--column-three-5"} isDrawer={false} hideClose={true} close={() => setModal(false)}>
           <ModalCard items={items} handleModal={handleModal} displayToast={displayToast} />
         </Modal>
-        : ""}
-    </>
+        : ""} */}
+    </div>
 
   )
 }

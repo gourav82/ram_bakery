@@ -27,8 +27,8 @@ const ModalCard = ({handleModal,items,displayToast}) => {
     <div className="overlay-modal"></div>
      <div className="modal font--right pl--10 pr--10 pb--5">
         <BsX onClick={handleModal} className='fs--22 color--error'/>
-        <div className={`modal--product flex ${isMobile || isIpad? "flex--direction-column":"flex--justify-content-between"}`}>
-            <img src={items.image} alt="" width="150" height="100" className={`bg--radius mb--10 mr--10 ${isMobile || isIpad? "width--column-90":"width--column-40"}`}/>
+        <div className={`modal--product flex ${isMobile || isIpad? "flex--justify-content-between":"flex--justify-content-between"}`}>
+            <img src={items.image} alt="" width="150" height="100" className={`bg--radius mb--10 mr--10 ${isMobile || isIpad? "width--column-40":"width--column-40"}`}/>
             <div className={`${isMobile || isIpad? "width--column-one":"width--column-60"}`}>
                 <span className='flex flex--justify-content-between flex--align-items-center font--left mt--10'>
                     <span className='color--error fs--18 font--bold'>{items?.name}</span>
