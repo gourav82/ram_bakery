@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCheckUser } from '../../../redux/slices/authSlice';
 import { useRouter } from 'next/router';
+import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 
 
 

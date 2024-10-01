@@ -1,9 +1,9 @@
 import React from 'react'
 import Input from '../../core/Input'
-import UseCheckMobileScreen from '../../hooks/UseCheckMobileScreen';
+import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 
 const cartDetails = () => {
-  const {isMobile, isIpad } = UseCheckMobileScreen();
+  const {isMobile, isIpad } = useCheckMobileScreen();
 
   return (
     <div className={`cart--details bg--shadow width--column-${isMobile || isIpad? "one":"two-10"} bg--radius pl--20 pr--20 pt--15 pb--15`}>

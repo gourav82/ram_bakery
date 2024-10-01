@@ -1,7 +1,7 @@
 import React from 'react'
 import Input from '../../core/Input'
-import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 import FooterMobile from './FooterMobile';
+import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 
 const Footer = () => {
     const {isMobile, isIpad } = useCheckMobileScreen();

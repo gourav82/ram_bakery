@@ -1,12 +1,12 @@
 import React from 'react'
 import { BsTrashFill, BsStarFill } from "react-icons/bs";
-import UseCheckMobileScreen from '../../hooks/UseCheckMobileScreen';
 import { useDispatch } from 'react-redux';
 import { removieItem, decrease, addToCart} from '../../../redux/slices/cartSlice';
 import { getImageUrl } from '../../../helper/BaseUrl';
+import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 
 const CartProduct = ({data}) => {
-  const {isMobile, isIpad } = UseCheckMobileScreen();
+  const {isMobile, isIpad } = useCheckMobileScreen();
 
   const review = [0, 1, 2, 3, 4];
 

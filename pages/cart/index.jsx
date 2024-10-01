@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import CartProduct from '../../component/layouts/cart/CartProduct'
 import CartDetails from '../../component/layouts/cart/CartDetails'
 import { useSelector } from 'react-redux';
